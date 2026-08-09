@@ -8,8 +8,8 @@ let model, mediaRecorder;
 let isRecording = false;
 let recordedChunks = [];
 let partCount = 0;
-let totalParts = 3; // 5分 = 2分 + 2分 + 1分 (合計3分割)
-const segmentDuration = 120000; // 2分 (120,000ms)
+let totalParts = 5; // 3 から 5 に変更
+const segmentDuration = 60000; // 120000 から 60000 に変更
 
 startBtn.addEventListener('click', async () => {
   startBtn.style.display = 'none';
@@ -73,7 +73,9 @@ function recordNextSegment() {
   mediaRecorder.start();
 
   // 最後のパートだけ1分(60秒)、それ以外は2分(120秒)
-  const duration = (partCount === totalParts) ? 60000 : segmentDuration;
+  // const duration = (partCount === totalParts) ? 60000 : segmentDuration;
+  const segmentDuration = 60000; // 120000 から 60000 に変更
+  
   setTimeout(() => mediaRecorder.stop(), duration);
 }
 
