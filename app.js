@@ -38,7 +38,9 @@ async function detectFrame() {
     
     if (petDetected) startRecordingSequence();
   }
-  requestAnimationFrame(detectFrame);
+  // 変更前: requestAnimationFrame(detectFrame);
+  // 変更後: 1秒（1000ミリ秒）間隔で次を実行する
+  setTimeout(detectFrame, 1000);
 }
 
 function startRecordingSequence() {
