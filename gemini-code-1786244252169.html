@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Monitor</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
+  <style>
+    body { text-align: center; font-family: sans-serif; }
+    video { width: 100%; max-width: 640px; background: #000; }
+  </style>
+</head>
+<body>
+  <h2>Pet Monitor</h2>
+  <button id="startBtn">監視スタート</button>
+  <p id="status">待機中...</p>
+  <!-- iPad対策: autoplay, playsinline, muted が必須 -->
+  <video id="video" autoplay playsinline muted></video>
+
+  <script src="app.js"></script>
+</body>
+</html>
