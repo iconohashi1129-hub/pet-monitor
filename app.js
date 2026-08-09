@@ -1,4 +1,4 @@
-const GAS_URL = 'https://script.google.com/macros/s/AKfycbwCITZkY9ZzsXn4dhNq-ncghN3qWzL5cyQDkTzW_P3BPG7_KLQDvv2tJf-nc_qUPavwNg/exec';
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbweRXEKK0dFqqVE9-VCs4fp9n7fS9mejCe-BABJgy6VbZcvRvRFcUVqQCWoROyheSRBew/exec';
 
 const video = document.getElementById('video');
 const startBtn = document.getElementById('startBtn');
