@@ -1,4 +1,4 @@
-const GAS_URL = 'YOUR_GAS_WEB_APP_URL';
+const GAS_URL = 'https://script.google.com/macros/s/AKfycbyT7HtGs6Ydw5uUXAibiO0YnogyKmIihiYX9l80r5qFhtivjiPV1gNOneaibLUtawmDlw/exec';
 
 const video = document.getElementById('video');
 const startBtn = document.getElementById('startBtn');
